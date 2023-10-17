@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Our Services- Abettance</title>
+        <link rel="icon" type="image/x-icon" href="RHA.jfif">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <nav>
+                <div class="logo"></div>
+                <img src="RHA.jpg">
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="https://rhacorp.github.io/abettance.github.io/">Home</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Download</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="information">
+                <div class="overlay"></div>
+                <img src="abettance trial.png" class="abettance">
+                <div id="circle">
+                 <div class="feature one">
+                    <img src="navigator.png">
+                    <div>
+                        <h1>Navigator</h1>
+                        <p>Sensible navigation with senses</p>
+                    </div>
+                 </div>
+                 <div class="feature two">
+                    <img src="Reminder.png">
+                    <h1>Reminder</h1>
+                    <p>Alarmed to remind</p>
+                 </div>  
+                 <div class="feature three">
+                    <img src="Surroundings.png">
+                    <h1>Surroundings</h1>
+                    <p>Surroundings Profounder</p>
+                 </div>  
+                 <div class="feature four">
+                    <img src="Translator.png">
+                    <h1>Translator</h1>
+                    <p>Vividest Interpreter</p>
+                 </div>  
+                </div>
+            </div>
+
+            <div class="controls">
+                <img src="uparrow.png" id="upBtn">
+                <h3>Services</h3>
+                <img src="uparrow.png" id="downBtn">
+            </div>
+        </div>
+
+        <script>
+            var circle= document.getElementById("circle");
+            var upBtn= document.getElementById("upBtn");
+            var downBtn= document.getElementById("downBtn");
+
+            var rotateValue = circle.style.transform;
+            var rotateSum;
+
+            upBtn.onclick = function()
+            {
+                rotateSum = rotateValue + "rotate(-90deg)";
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;
+            }
+
+            downBtn.onclick = function()
+            {
+                rotateSum = rotateValue + "rotate(90deg)";
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;
+            }
+        </script>
+    </body>
+</html>
