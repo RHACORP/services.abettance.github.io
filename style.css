@@ -15,7 +15,7 @@
     height: 100vh;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(to right, #dd2e44, #241570);
+    background: linear-gradient(to right, #000, #fff);
 }
 nav{
     width: 80%;
